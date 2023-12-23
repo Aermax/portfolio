@@ -99,6 +99,12 @@ export const Skill_data = [
   
   export const Frontend_skill = [
     {
+      skill_name: "Next js 13",
+      Image: "/next.png",
+      width: 80,
+      height: 80,
+    },
+    {
       skill_name: "Html 5",
       Image: "/html.png",
       width: 80,
@@ -152,12 +158,7 @@ export const Skill_data = [
       width: 80,
       height: 80,
     },
-    {
-      skill_name: "Next js 13",
-      Image: "/next.png",
-      width: 80,
-      height: 80,
-    },
+    
   ];
   
   export const Backend_skill = [
@@ -202,12 +203,6 @@ export const Skill_data = [
       Image: "/prisma.webp",
       width: 70,
       height: 70,
-    },
-    {
-      skill_name: "Graphql",
-      Image: "/graphql.png",
-      width: 80,
-      height: 80,
     },
   ];
   

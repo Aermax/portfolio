@@ -7,17 +7,22 @@ import Project from "../components/project"
 import Skills from "../components/Skills"
 import Footer from "../components/Footer"
 import Contact from "../components/contact"
+import { Blurhash, BlurhashCanvas } from "react-blurhash"
+import NEWIMG from "../components/newImg"
+import BlurBG from "../components/blur-bg"
+import About from "../components/about"
+
+const hash = "LaDSOlbxogfR~EawocfkS*bFa$fk"
 
 export default function Home() {
   return (
     <>
       <Navbar />
-      <div className="flex justify-center items-center relative top-[100px] w-[95%]  h-[100vh] text-center mx-9">
-        <Image
-          className="rounded-lg object-cover"
+      <div className="flex justify-center items-center relative top-[75px] w-[95%]  h-[100vh] text-center mx-9">
+        <BlurBG
+          hash="LaDSOlbxogfR~EawocfkS*bFa$fk"
           src="/bg2.avif"
-          alt="image"
-          fill
+          className="rounded-lg object-cover w-full h-full"
         />
         <Image
           className="  rotate-180 delay-300 absolute transform  translate-y-32 z-10 "
@@ -35,8 +40,9 @@ export default function Home() {
         </div>
         <div className="absolute w-full h-full blur-3xl z-1 bg-[rgba(255,255,255,0.1)]"></div>
         <Hero />
+        <About />
       </div>
-      <div id="Projects" className="relative top-[100px] ">
+      <div id="Projects" className="relative top-[75px] ">
         <Project />
       </div>
       <Skills />

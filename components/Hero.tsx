@@ -4,12 +4,12 @@ import AnimatedText from "./animText"
 
 const Hero = () => {
   return (
-    <div className="absolute z-10 text-8xl w-full transform -translate-y-32 flex flex-col items-start p-4">
-      INTO THE{" "}
+    <div className="uppercase absolute z-10 text-8xl w-full transform -translate-y-32 flex flex-col items-start p-4">
+      Ideas into{" "}
       <span className="font-semibold text-orange-500">
         <AnimatedText
-          title="INCREDEBLE"
-          className="font-semibold text-orange-500"
+          title="Reality"
+          className="uppercase font-semibold text-orange-500"
         />
       </span>
     </div>

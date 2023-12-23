@@ -5,6 +5,8 @@ import { motion } from "framer-motion"
 import { useInView } from "react-intersection-observer"
 import Image from "next/image"
 import Link from "next/link"
+import NEWIMG from "./newImg"
+import BlurBG from "./blur-bg"
 
 interface Props {
   src: string
@@ -12,9 +14,10 @@ interface Props {
   index: number
   title: string
   link: string
+  hash: string
 }
 
-const Cards = ({ src, logo, index, title, link }: Props) => {
+const Cards = ({ src, logo, hash, index, title, link }: Props) => {
   const { ref, inView } = useInView({
     triggerOnce: true
   })
@@ -36,11 +39,10 @@ const Cards = ({ src, logo, index, title, link }: Props) => {
     >
       <Link target="_blank" href={link}>
         <div className="relative w-[300px] h-[500px] rounded-md parent">
-          <Image
-            className="card-img object-cover rounded-md"
+          <BlurBG
+            className="card-img object-cover rounded-md w-full h-full"
             src={src}
-            fill
-            alt="skill image"
+            hash={hash}
           />
           <div className="w-[200px] h-[200px] bg-white flex flex-col justify-center rounded-md items-center p-2 child absolute transform top-1/2 left-1/2 -translate-x-[50%]">
             <Image
@@ -50,7 +52,9 @@ const Cards = ({ src, logo, index, title, link }: Props) => {
               height={100}
               alt="skill image"
             />
-            <div className=" font-semibold p-2 text-center ">{title}</div>
+            <div className=" font-semibold p-2 text-center dark:text-black">
+              {title}
+            </div>
           </div>
         </div>
       </Link>

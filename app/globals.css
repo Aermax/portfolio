@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: #fff;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+  --radius : 10px;
+}
+
+body::-webkit-scrollbar { 
+  display: none;  /* Safari and Chrome */
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+} */
+
+body {
+  color: rgb(var(--foreground-rgb));
+    width: 100vw;
+    margin: 0;
+    background-repeat: no-repeat;
+
+}
+
+#bg-img {
+  backdrop-filter: blur(20px);
+}
+
+.child{ opacity:0; width:0%; transition: all 0.1s}
+.parent:hover .child{ opacity:1; width: 80%; transition: all 0.1s}
+.parent:hover .card-img {
+  filter: blur(2px);
+  transform: scale(1.1);
+  transition: all 0.3s;
+}
+
+.parent .card-img {
+  transition: all 0.3s;
+}
+/* .parent:hover {background-color: #000;}
+.parent:hover:nth-child(1) {
+  opacity: 0.5;background-color: rgba(0,0,0,0.5);
+} */
+
+.header-text {
+  transition: all 0.1;
+}

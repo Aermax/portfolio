@@ -35,7 +35,7 @@ const BlurBG = ({
           ></BlurhashCanvas>
         </div>
       )}
-      {isImgLoaded && <img fill src={src} alt="img" className={className} />}
+      {isImgLoaded && <img src={src} alt="img" className={className} />}
     </>
   )
 }

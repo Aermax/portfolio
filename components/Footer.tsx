@@ -39,7 +39,7 @@ const Footer = () => {
 
             <a href="https://twitter.com/sidshelke26">
               <p className="hover:text-orange-500 flex flex-row items-center my-[15px] cursor-pointer">
-                <RxGithubLogo />
+                <RxTwitterLogo />
                 <span className="text-[15px] ml-[6px]">Twitter</span>
               </p>
             </a>

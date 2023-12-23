@@ -19,7 +19,7 @@ const Skills = () => {
     >
       <AnimatedText
         title="Skills"
-        className="text-6xl my-4 font-semibold text-black dark:text-orange-500"
+        className="text-6xl my-4 font-semibold text-black dark:text-white"
       />
 
       <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center">

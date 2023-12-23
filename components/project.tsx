@@ -1,7 +1,9 @@
-import React from "react"
+import React, { useRef } from "react"
 import AnimatedText from "./animText"
 import Image from "next/image"
 import Cards from "./animCard"
+import { useTransform, useScroll } from "framer-motion"
+import { HorizontalScrollCarousel } from "./scroll"
 
 const data = [
   {
@@ -29,26 +31,12 @@ const data = [
 
 const Project = () => {
   return (
-    <div className="flex flex-col items-center justify-center m-8 ">
+    <div className="flex flex-col items-center justify-center relative bg-neutral-900 top-16">
       <AnimatedText
         title="Projects"
-        className="text-6xl font-semibold my-16 dark:text-orange-500"
+        className="text-6xl font-semibold my-16 text-white"
       />
-      <div className="flex flex-col md:flex-row justify-between items-center gap-16 ">
-        {data.map((item, index) => {
-          return (
-            <Cards
-              hash={item.hash}
-              key={index}
-              logo={item.logo}
-              src={item.Image}
-              title={item.title}
-              link={item.link}
-              index={index}
-            />
-          )
-        })}
-      </div>
+      <HorizontalScrollCarousel />
     </div>
   )
 }

@@ -2,7 +2,7 @@ import React from "react"
 
 const About = () => {
   return (
-    <div className="rounded-md hover:text-transparent transition-all p-4  text-left absolute top-1/2 left-1/2 transform  translate-x-64 translate-y-32 text-white text-lg">
+    <div className="rounded-md hover:text-transparent transition-all delay-75 p-4  text-left absolute top-1/2 left-1/2 transform  xl:translate-x-64 xl:translate-y-32 text-white text-lg">
       <p>
         <span className="text-orange-500">Crafting</span> Digital Experiences
       </p>

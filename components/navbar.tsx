@@ -2,6 +2,20 @@ import React from "react"
 import AnimatedText from "./animText"
 import Link from "next/link"
 import { ModeToggle } from "./darkMode"
+import {
+  Drawer,
+  DrawerClose,
+  DrawerContent,
+  DrawerDescription,
+  DrawerHeader,
+  DrawerTitle,
+  DrawerTrigger,
+  DrawerFooter
+} from "@/components/ui/drawer"
+
+import { FaBars } from "react-icons/fa"
+
+import { Button } from "@/components/ui/button"
 
 const Navbar = () => {
   return (
@@ -16,7 +30,7 @@ const Navbar = () => {
         </span>
       </div>
 
-      <div className="flex items-center justify-between text-xl font-semibold gap-3">
+      <div className="md:flex hidden items-center justify-between text-xl font-semibold gap-3">
         <div>
           <Link scroll className="hover:text-orange-500" href="#about">
             About
@@ -42,6 +56,18 @@ const Navbar = () => {
           </Link>
         </div>
         <ModeToggle />
+      </div>
+      <div className="flex gap-2 items-center justify-evenly md:hidden">
+        <ModeToggle />
+        <div>
+          <Link
+            scroll
+            className="hover:bg-orange-500 transition-colors text-white bg-black dark:bg-white dark:text-black  rounded-md py-2 px-4"
+            href="mailto:sidshelke26@gmail.com"
+          >
+            Contact
+          </Link>
+        </div>
       </div>
     </div>
   )

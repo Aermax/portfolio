@@ -14,7 +14,7 @@ const Skills = () => {
   return (
     <section
       id="skills"
-      className=" rounded-lg my-4 text-orange-500 w-full h-auto flex flex-col items-center justify-center gap-3 relative overflow-hidden pb-80 py-20 top-[75px]"
+      className="h-[100vh] rounded-lg my-4 text-orange-500 w-full flex flex-col items-center justify-center gap-3 relative overflow-hidden pb-80 py-20 top-[75px]"
       style={{ transform: "scale(0.9" }}
     >
       <AnimatedText

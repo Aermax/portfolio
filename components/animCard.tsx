@@ -55,6 +55,18 @@ const Cards = ({ src, logo, hash, index, title, link }: Props) => {
             <div className=" font-semibold p-2 text-center dark:text-black">
               {title}
             </div>
+            {/* <div className="flex md:hidden">
+              <Image
+                className="rounded-md"
+                src={logo}
+                width={100}
+                height={100}
+                alt="skill image"
+              />
+              <div className=" font-semibold p-2 text-center dark:text-black">
+                {title}
+              </div>
+            </div> */}
           </div>
         </div>
       </Link>

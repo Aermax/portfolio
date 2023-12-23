@@ -34,7 +34,7 @@ const Project = () => {
         title="Projects"
         className="text-6xl font-semibold my-16 dark:text-orange-500"
       />
-      <div className="flex justify-between items-center gap-16">
+      <div className="flex flex-col md:flex-row justify-between items-center gap-16 ">
         {data.map((item, index) => {
           return (
             <Cards

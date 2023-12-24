@@ -5,6 +5,8 @@ import { GeistMono } from "geist/font/mono"
 
 import "./globals.css"
 import { ThemeProvider } from "../components/theme-provider"
+import Navbar from "../components/navbar"
+import Stars from "../components/stars"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -20,8 +22,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${GeistMono.className} overflow-x-hidden`}>
+      <body
+        className={`${GeistMono.className} overflow-y-scroll overflow-x-hidden`}
+      >
         <ThemeProvider attribute="class" disableTransitionOnChange>
+          {/* <Stars /> */}
+          <Navbar />
+
           {children}
         </ThemeProvider>
       </body>

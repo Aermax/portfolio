@@ -18,7 +18,6 @@ const hash = "LaDSOlbxogfR~EawocfkS*bFa$fk"
 export default function Home() {
   return (
     <>
-      <Navbar />
       <div className="flex w-full justify-center">
         <div className="flex justify-center items-center relative left-0 top-[75px] md:w-[95%]  md:h-[100vh] w-[87%] h-[90vh] text-center mx-9">
           <BlurBG
@@ -44,10 +43,13 @@ export default function Home() {
           <About />
         </div>
       </div>
-      <div id="Projects" className="relative top-[75px] w-full h-full">
+      <div id="Projects" className="relative top-[75px] w-full h-full z-10">
         <Project />
       </div>
-      <Skills />
+      <div id="Projects" className="relative top-[75px] w-full h-full z-10 ">
+        <Skills />
+      </div>
+
       {/* <HorizontalScrollCarousel /> */}
       {/* <Contact /> */}
       <Footer />

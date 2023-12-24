@@ -30,6 +30,7 @@ const Cards = ({ src, logo, hash, index, title, link }: Props) => {
   const animationDelay = 0.3
   return (
     <motion.div
+      className="mb-[20px] "
       ref={ref}
       initial="hidden"
       variants={imageVariants}

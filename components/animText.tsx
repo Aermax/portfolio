@@ -41,6 +41,7 @@ export default function AnimatedText({ title, className }: AnimatedTextProps) {
     <>
       <h1
         onMouseOver={handleMouseOver}
+        onLoad={handleMouseOver}
         className={cn("header-text uppercase text-9xl", className)}
       >
         {text}

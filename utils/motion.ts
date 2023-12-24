@@ -39,3 +39,16 @@ export function slideInFromLeft(delay: number) {
     }
     }
   };
+
+  export function slideInScale() {
+    return {
+      hidden: { opacity: 0.5 },
+      visible: {
+              opacity: 1,
+              transition: {
+                delay: 1,
+                duration: 0.5
+              }
+            }
+    }
+  }

@@ -4,7 +4,7 @@ import AnimatedText from "./animText"
 
 const Hero = () => {
   return (
-    <div className="text-black absolute z-10 md:text-8xl text-4xl w-full transform -translate-y-32 flex flex-col items-start p-4">
+    <div className="text-black absolute left-0 z-10 md:text-8xl text-4xl w-full transform -translate-y-32 flex flex-col items-start p-4">
       Ideas into{" "}
       <span className="font-semibold text-orange-500">
         <AnimatedText

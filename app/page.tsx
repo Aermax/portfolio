@@ -40,7 +40,6 @@ export default function Home() {
           <div className="hidden md:visible  hover:text-orange-500 transition-all absolute transform -rotate-90 translate-y-32 translate-x-4 z-10">
             Scroll
           </div>
-          <div className="absolute w-full h-full blur-3xl z-1 bg-[rgba(255,255,255,0.1)]"></div>
           <Hero />
           <About />
         </div>

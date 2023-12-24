@@ -23,11 +23,11 @@ const Cards = ({ src, logo, hash, index, title, link }: Props) => {
   })
 
   const imageVariants = {
-    hidden: { opacity: 0 },
-    visible: { opacity: 1 }
+    hidden: { opacity: 0, translateX: -100 },
+    visible: { opacity: 1, translateX: 0 }
   }
 
-  const animationDelay = 0.5
+  const animationDelay = 0.3
   return (
     <motion.div
       ref={ref}

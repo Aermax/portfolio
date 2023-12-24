@@ -19,7 +19,7 @@ import { Button } from "@/components/ui/button"
 
 const Navbar = () => {
   return (
-    <div className="z-[50] left-0 fixed top-0 w-full backdrop-filter backdrop-blur-lg bg-opacity-25 dark:backdrop-filter dark:backdrop-blur-lg dark:bg-opacity-25 bg-white dark:bg-gray-900 flex items-center justify-between p-4 px-16  gap-3 ">
+    <div className="z-[50] left-0 fixed top-0 w-full backdrop-filter backdrop-blur-lg bg-opacity-25 dark:backdrop-filter dark:backdrop-blur-lg dark:bg-opacity-25 bg-white dark:bg-gray-900 flex items-center justify-between md:p-4  p-4 md:px-16 px-4  gap-3 ">
       <div className="text-3xl font-bold flex gap-1 hover:text-orange-500">
         <AnimatedText
           className="text-3xl font-bold hover:text-orange-500"

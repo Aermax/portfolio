@@ -36,6 +36,21 @@ const Project = () => {
         title="Projects"
         className="text-6xl font-semibold my-16 text-white"
       />
+      <div className="flex flex-col md:hidden justify-between items-center gap-16 ">
+        {data.map((item, index) => {
+          return (
+            <Cards
+              hash={item.hash}
+              key={index}
+              logo={item.logo}
+              src={item.Image}
+              title={item.title}
+              link={item.link}
+              index={index}
+            />
+          )
+        })}
+      </div>
       <HorizontalScrollCarousel />
     </div>
   )

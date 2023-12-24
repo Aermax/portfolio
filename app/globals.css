@@ -21,6 +21,15 @@ body::-webkit-scrollbar {
   }
 } */
 
+@media only screen and (max-width: 480px) {
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  
+}
+
+
 body {
   color: rgb(var(--foreground-rgb));
     width: 100vw;

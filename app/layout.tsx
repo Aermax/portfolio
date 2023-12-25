@@ -6,7 +6,6 @@ import { GeistMono } from "geist/font/mono"
 import "./globals.css"
 import { ThemeProvider } from "../components/theme-provider"
 import Navbar from "../components/navbar"
-import Stars from "../components/stars"
 import { AnimatedBlob } from "../components/animBlob"
 
 const inter = Inter({ subsets: ["latin"] })

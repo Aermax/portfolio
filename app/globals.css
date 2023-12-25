@@ -35,7 +35,7 @@ body {
     width: 100vw;
     margin: 0;
     background-repeat: no-repeat;
-
+  cursor: none !important;
 }
 
 #bg-img {
@@ -61,3 +61,16 @@ body {
 .header-text {
   transition: all 0.1;
 }
+
+ a {
+  cursor: none !important;
+ }
+
+ #blob {
+  opacity: 0;
+
+ }
+
+ body:hover > #blob {
+  opacity: 1;
+ }

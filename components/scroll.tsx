@@ -1,6 +1,7 @@
 import { motion, useTransform, useScroll } from "framer-motion"
 import { useRef } from "react"
 import Cards from "./animCard"
+import AnimatedText from "./animText"
 
 export const HorizontalScrollCarousel = () => {
   const targetRef = useRef(null)
@@ -9,13 +10,20 @@ export const HorizontalScrollCarousel = () => {
   })
 
   const x = useTransform(scrollYProgress, [0, 1], ["70%", "-85%"])
+  const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0])
 
   return (
     <section
       ref={targetRef}
-      className="relative   hidden md:flex h-[300vh] bg-neutral-900"
+      className="relative   hidden md:flex flex-row h-[300vh] bg-neutral-900"
     >
       <div className="sticky top-0 flex h-screen items-center overflow-hidden">
+        <motion.div style={{ opacity }}>
+          <AnimatedText
+            title="Projects"
+            className="text-3xl md:text-6xl font-semibold my-16 text-white"
+          />
+        </motion.div>
         <motion.div
           style={{ x }}
           className="flex justify-between items-center gap-16"

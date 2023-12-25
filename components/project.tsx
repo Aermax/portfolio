@@ -32,11 +32,11 @@ const data = [
 const Project = () => {
   return (
     <div className="flex z-0 flex-col items-center justify-center relative bg-neutral-900 top-16">
-      <AnimatedText
-        title="Projects"
-        className="text-3xl md:text-6xl font-semibold my-16 text-white"
-      />
       <div className="flex flex-col md:hidden justify-between items-center gap-16 ">
+        <AnimatedText
+          title="Projects"
+          className="text-3xl md:text-6xl font-semibold my-16 text-white"
+        />
         {data.map((item, index) => {
           return (
             <Cards

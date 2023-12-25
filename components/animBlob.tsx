@@ -20,22 +20,41 @@ export const AnimatedBlob = ({ className }: AnimatedBlobProps) => {
   useEffect(() => {
     const mouseMove = (e: any) => {
       setPosition({
-        x: e.clientX - 20,
-        y: e.clientY + 30
+        x: e.clientX - 12,
+        y: e.clientY - 12
       })
     }
 
+    // const scrollMove = (e: any) => {
+    //   setPosition({
+    //     x: e.pageX,
+    //     y: e.pageY
+    //   })
+    // }
+
     window.addEventListener("mousemove", mouseMove)
+    // window.addEventListener("scroll", scrollMove)
     console.log(position)
     return () => {
+      // removeEventListener("scroll", scrollMove)
       removeEventListener("mousemove", mouseMove)
     }
   }, [position])
 
   const variants = {
+    initial: {
+      opacity: 0
+    },
     default: {
       x: position.x,
-      y: position.y
+      y: position.y,
+      opacity: 1,
+      transition: {
+        duration: 0.1
+      }
+    },
+    exit: {
+      opacity: 0
     }
   }
 
@@ -46,7 +65,7 @@ export const AnimatedBlob = ({ className }: AnimatedBlobProps) => {
         animate="default"
         id="blob"
         className={cn(
-          "z-50 absolute transform -translate-y-[500%] -translate-x-[500%] h-[50px] w-[50px] rounded-full bg-gradient-to-r from-orange-300 via-blue-500 to-blue-600",
+          "z-50 pointer-events-none fixed top-0 left-0 h-[24px] w-[24px] rounded-full bg-gradient-to-r from-orange-300 via-blue-500 to-blue-600",
           className
         )}
       ></motion.div>

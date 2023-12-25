@@ -1,19 +1,11 @@
 "use client"
 import Image from "next/image"
-import Navbar from "../components/navbar"
 import Hero from "../components/Hero"
-import AnimatedText from "../components/animText"
 import Project from "../components/project"
 import Skills from "../components/Skills"
 import Footer from "../components/Footer"
-import Contact from "../components/contact"
-import { Blurhash, BlurhashCanvas } from "react-blurhash"
-import NEWIMG from "../components/newImg"
 import BlurBG from "../components/blur-bg"
 import About from "../components/about"
-import { HorizontalScrollCarousel } from "../components/scroll"
-
-const hash = "LaDSOlbxogfR~EawocfkS*bFa$fk"
 
 export default function Home() {
   return (
@@ -33,9 +25,7 @@ export default function Home() {
             alt="img"
             draggable={false}
           />
-          {/* <div className="absolute text-[150px] translate-y-32 z-10 font-extrabold transform rotate-90">
-          ⌁
-        </div> */}
+
           <div className="hidden md:visible  hover:text-orange-500 transition-all absolute transform -rotate-90 translate-y-32 translate-x-4 z-10">
             Scroll
           </div>
@@ -46,12 +36,9 @@ export default function Home() {
       <div id="Projects" className="relative top-[75px] w-full h-full z-10">
         <Project />
       </div>
-      <div id="Projects" className="relative top-[75px] w-full h-full z-10 ">
+      <div id="Projects" className="relative top-[75px] w-full h-[100vh] z-10 ">
         <Skills />
       </div>
-
-      {/* <HorizontalScrollCarousel /> */}
-      {/* <Contact /> */}
       <Footer />
     </>
   )

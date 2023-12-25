@@ -61,14 +61,14 @@ export const AnimatedBlob = ({ className }: AnimatedBlobProps) => {
         animate="default"
         id="blob"
         className={cn(
-          "z-50 flex items-center justify-center  pointer-events-none fixed top-0 left-0 h-[24px] w-[24px] rounded-full  dark:bg-white bg-white",
+          "z-50 flex items-center justify-center  pointer-events-none fixed top-0 left-0 h-[24px] w-[24px] rounded-full  bg-gradient-to-r from-orange-500 via-red-500 to-yellow-500",
           className
         )}
       >
         <motion.div
           id="trailer-icon"
           className={cn(
-            "relative transform rotate-45 text-black",
+            "relative transform rotate-45 text-black dark:text-white",
             position.interacting ? "opacity-1" : "opacity-0"
           )}
         >

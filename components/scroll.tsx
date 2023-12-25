@@ -17,7 +17,7 @@ export const HorizontalScrollCarousel = () => {
       ref={targetRef}
       className="relative   hidden md:flex flex-row h-[300vh] bg-neutral-900"
     >
-      <div className="sticky top-0 flex h-screen items-center overflow-hidden">
+      <motion.div className="sticky top-0 flex h-screen items-center overflow-hidden">
         <motion.div style={{ opacity }}>
           <AnimatedText
             title="Projects"
@@ -42,7 +42,7 @@ export const HorizontalScrollCarousel = () => {
             )
           })}
         </motion.div>
-      </div>
+      </motion.div>
     </section>
   )
 }

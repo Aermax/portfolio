@@ -18,7 +18,7 @@ export const HorizontalScrollCarousel = () => {
       className="relative   hidden md:flex flex-row h-[300vh] bg-neutral-900"
     >
       <motion.div className="sticky top-0 flex h-screen items-center overflow-hidden">
-        <motion.div style={{ opacity }}>
+        <motion.div style={{ opacity }} className="absolute left-5">
           <AnimatedText
             title="Projects"
             className="text-3xl md:text-6xl font-semibold my-16 text-white"
@@ -49,24 +49,32 @@ export const HorizontalScrollCarousel = () => {
 
 const data = [
   {
-    Image: "/art.webp",
-    logo: "/logo2.svg",
-    title: "Creata Ultimate AI tool",
-    link: "https://creata-ai.vercel.app/",
-    hash: "L7ATBC}6m+%i0cE0o#b|~Cv~9Do="
-  },
-  {
-    Image: "/art2.avif",
+    Image: "/meditate.jpg",
     logo: "/lotus.png",
     title: "Lazymind Mediatation App",
     link: "https://lazymind-25a7a.web.app/",
-    hash: "LUFFy#WAM|s;_4RjWAoLD%M{WBWB"
+    hash: "LhJP.2NKt7s.~BNHNbjYNtNGS2ax"
   },
+  {
+    Image: "/ecom1.jpg",
+    logo: "/ecom.png",
+    title: "Eccomerce Website",
+    link: "https://aerstore.vercel.app/",
+    hash: "LGJa=s009F%N~Vx]00%M?E4otRM{"
+  },
+
   {
     Image: "/logo.png",
     logo: "/logo.png",
     title: "Realtime Online Game",
     link: "https://maxo.netlify.app/",
     hash: "L90r1Df2hfd@g~eUeVf~hffmhegM"
+  },
+  {
+    Image: "/art.webp",
+    logo: "/logo2.svg",
+    title: "Creata Ultimate AI tool",
+    link: "https://creata-ai.vercel.app/",
+    hash: "L7ATBC}6m+%i0cE0o#b|~Cv~9Do="
   }
 ]

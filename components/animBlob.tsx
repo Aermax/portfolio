@@ -61,7 +61,7 @@ export const AnimatedBlob = ({ className }: AnimatedBlobProps) => {
         animate="default"
         id="blob"
         className={cn(
-          "flex z-50  items-center justify-center  pointer-events-none fixed top-0 left-0 h-[24px] w-[24px] rounded-full  bg-gradient-to-r from-orange-500 via-red-500 to-yellow-500",
+          "flex z-50  items-center justify-center  pointer-events-none fixed top-0 left-0 h-[24px] w-[24px] rounded-full  bg-gradient-to-r from-orange-500 via-red-500 to-yellow-500 cursor",
           className
         )}
       >
